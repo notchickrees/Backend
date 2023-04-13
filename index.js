@@ -26,6 +26,9 @@ mongoose.connect("mongodb+srv://mustafa:helloworld@tutorxcluster.42lny5j.mongodb
     // }
   )
   .then(()=>{
+    app.listen(3000, () => {
+      console.log("Connected to server localhost:3000");
+    });
     console.log("Connected to Mongoose");
     app.use("/user", userRouter)
     app.use("/activeTutors", activeTutorsRouter)
@@ -41,6 +44,4 @@ mongoose.connect("mongodb+srv://mustafa:helloworld@tutorxcluster.42lny5j.mongodb
 
 // const PORT = process.env.PORT || 2000; //port for https
 
-app.listen(3000, () => {
-  console.log("Connected to server localhost:3000");
-});
+
