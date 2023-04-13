@@ -20,10 +20,10 @@ app.use(
 // connext to moongose
 mongoose.set('strictQuery', true)
 mongoose.connect("mongodb+srv://mustafa:helloworld@tutorxcluster.42lny5j.mongodb.net/tutorx",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    // {
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    // }
   )
   .then(()=>{
     console.log("Connected to Mongoose");
